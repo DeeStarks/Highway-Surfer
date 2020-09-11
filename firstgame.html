@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/firstgame.css">
+    <link href="C:\Users\aser\Desktop\Daniel files\dwd class\css\font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <title>Highway Surfer</title>
+</head>
+<body>
+    <div id="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+    <div id="start">
+        <p>HIGHWAY SURFER</p>
+        <div id="sbt">
+            <button id="startBtn">START GAME</button>
+        </div>
+    </div>
+    <div id="player">
+        <div id="playerInfo">
+            <h1>Enter Player Name:</h1>
+            <hr>
+            <input type="text" autofocus id="playerName" required>
+            <p id="info"></p>
+            <button id="playerBtn" type="button">Enter</button>
+        </div>
+    </div>
+    <audio controls loop autoplay>
+        <source src="music/background.mp3" type="audio/mp3">
+    </audio>
+    <div id="background">
+        <img src="images/background.jpg" alt="">
+    </div>
+    <div id="body">
+        <div id="road">
+            <div id="laneOut">
+                
+            </div>
+            <div id="roadUsers">
+                <img src="images/1.png" id="roadUser1" alt=""><br>
+                <img src="images/2.png" id="roadUser2" alt=""><br>
+                <img src="images/3.png" id="roadUser3" alt=""><br>
+                <img src="images/4.png" id="roadUser4" alt=""><br>
+                <img src="images/5.png" id="roadUser5" alt=""><br>
+                <img src="images/6.png" id="roadUser6" alt=""><br>
+                <img src="images/7.png" id="roadUser7" alt=""><br>
+                <img src="images/8.png" id="roadUser8" alt=""><br>
+                <img src="images/driver.png" alt="" id="car">
+            </div>
+            <div id="lane">
+                
+            </div>
+        </div>
+        <div id="bottom">
+            <p>Player Name:</p>
+            <h1 id="nameInput"></h1>
+            <div id="control">
+                <i class="fa fa-chevron-left" id="left"></i>
+                <i class="fa fa-chevron-right" id="right"></i>
+            </div>
+        </div>
+    </div>
+    <div id="timer" style="z-index: 9999; color: white;">
+        <p id="timing8"></p>
+        <p id="timing7"></p>
+        <p id="timing6"></p>
+        <p id="timing5"></p>
+        <p id="timing4"></p>
+        <p id="timing3"></p>
+        <p id="timing2"></p>
+        <p id="timing1"></p>
+    </div>
+    <div id="gameOver">
+        <h1>Game Over!!!</h1>
+        <a href="firstgame.html"><h2>Restart</h2></a>
+    </div>
+    
+
+    <script src="js/firstgame.js"></script>
+</body>
+</html>
